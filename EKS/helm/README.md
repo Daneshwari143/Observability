@@ -340,7 +340,7 @@ eksctl delete cluster --name robot-shop-cluster --region ap-southeast-1 --profil
 - **VPC ID**: Replace `vpc-028e7e406a9a1db45` in the Helm install command with your actual VPC ID, obtainable from the AWS Console (VPC > Your VPCs).
 - **IAM Role ARN**: Update `arn:aws:iam::730335247947:role/AmazonEKS_EBS_CSI_DriverRole` and `arn:aws:iam::730335247947:policy/AWSLoadBalancerControllerIAMPolicy` with your AWS account ID.
 - **Ingress YAML**: Ensure the `ingress.yaml` file is available in your repository. A sample `ingress.yaml` might look like:
-  ```yaml
+```yaml
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
